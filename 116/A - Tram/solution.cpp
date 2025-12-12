@@ -1,0 +1,1 @@
+#include <bits/stdc++.h>using namespace std;int main() {    int n, curr = 0, maxCap = 0;    cin >> n;    while (n--) {        int exit, enter;        cin >> exit >> enter;        curr = curr - exit + enter;        maxCap = max(maxCap, curr);    }    cout << maxCap;    return 0;}
